@@ -1,270 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>technology blogs</title>
-    <Style>
-        .container{
-            height:100%;
-            width:100%;
-            background-color:white;
-            /* background-image: linear-gradient(160deg,#0093E9 0%,#80D0C7 100% ); */
-            /* display:grid;
-            grid-template-rows: 1fr 1fr 1fr;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            column-gap: 20px;*/
-            padding: 20px;
-       
-         
-        }
-        .mainbody{
-            display:grid;
-            grid-template-rows: 1fr 1fr ;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            column-gap: 20px;
-            row-gap:20px;
-            padding: 50px;
-        }
-        .header{
-            height:20opx;
-           grid-column-start: 1;
-           grid-column-end: 5;
-           text-align: center;
-        }
-        .item{
-          height:500px;
-          width:390px;
-            border-radius: 20px;
-            background-color: aliceblue;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>todoList</title>
+  <Style>
+    body{
+      font-family: Arial;
+      text-align: center;
+      font-size: 30px;
+    }
+    #mybutton{
+      background-color: rgb(17, 157, 45);
+        height: 35px;
+      border-radius: 5px;
+      margin-left: 110px;
+      
+    }
+   #headdiv{
+    padding-left: 50px;
+   }
+    #textbox{
+      height: 30px;
+      margin-right: 70px;
+    }
+    #para1{
+     
+      display: grid;
+      margin-left: 200px;
+      grid-template-columns: 150px 300px 100px;
+    } 
+     #new_button{
+    height: 30px;
+    width:70px;
+    background-color: rgb(242, 62, 62);
+   
 
-        }
-        .item img{
-            height:300px;
-            width:390px;
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-        }
-        .info{
-            height:10%;
-            width:100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            margin: auto;
-            /* background-color:antiquewhite; */
-        }
-        .left img{
-            height:80%;
-            width:80%;
-        }
-        .middle  {
-            height:80%;
-            width:30%;
-        }
-        .middle p{
-            color: blue;
-        }
-        .right{
-            height:80%;
-            width:30%;
-        }
-
-
-    </Style>
+    }
+    #span1{
+      size-adjust: 40px;
+      padding-left: 80px;
+    }
+    #spand{
+      text-size-adjust: 20px;
+      size-adjust: 40px;
+      padding-left: 40px;
+    } 
+  </Style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Technology Blogs</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit. Aspernatur quam temporibus
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit
-                . Quaerat labore neque veritatis accusamus ab blanditiis
-                 quos nesciunt, impedit necessitatibus temporibus.</p>
+<div id ='headdiv'>
+  <h1>TO DO APP</h1>
+  <input id="textbox" type="text" placeholder="Enter TODO here">
+  <input id="tododate"type="date">
+  <button id="mybutton"  onclick="addtodo()">Add</button>
+</div>
+  <div id="para1">
+   
 
-        </div>
-       <div class="mainbody">
-         <div class=" item 1">
-            <img src="images.jpg">
-         <div class="name">
-            <h2>devops</h2>
-         </div>
-         <div class="information">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                 Dicta alias ea, temporibus
-                 aliquid unde explicabo ducimus sit. Consequatur,
-                  nihil eveniet.</p>
-                </div>
-                  <div class="info">
-                    <div class="left">
-                       <img src="images.png">
-                    </div>
-                    <div class="middle">
-                       <p>Patrick Debois</p>
-                    </div>
-                    <div class="right">
-                        <button>technology</button>
-                    </div>
-                  </div>
-        </div>
-        <div class="item 2">
-            <img src="images (1).jpg">
-            <div class="name">
-                <h2>virtual reality</h2>
-            </div>
-            <div class="information">
-           <p>Lorem ipsum dolor sit amet consectetur
-             adipisicing elit. 
-            Possimus pariatur dolor commodi delectus explicabo quis?</p>
-        </div>
-        <div class="info">
-            <div class="left">
-               <img src="images.png">
-            </div>
-            <div class="middle">
-               <p> Ivan Sutherland</p>
-            </div>
-            <div class="right">
-                <button>technology</button>
-            </div>
-          </div>
-        </div>
-        <div class="item 3">
-            <img src="images (2).jpg" >
-            <div class="name">
-            <h2>Networking </h2>
-            </div>
-            <div class="information">
-            <p>Lorem ipsum dolor sit amet consectetur a
-                dipisicing elit. Deleniti, laboriosam repellat
-                 harum provident est unde.</p>
-            </div>
-            <div class="info">
-                <div class="left">
-                   <img src="images.png">
-                </div>
-                <div class="middle">
-                   <p>Paul Baran </p>
-                </div>
-                <div class="right">
-                    <button>technology</button>
-                </div>
-              </div>
-            </div>
-        <div class="item 4">
-            <img src="images (4).jpg" >
-            <div class="name">
-            <h2>Data science</h2>
-            </div>
-            <div class="information">
-            <p>Lorem ipsum dolor sit amet, consectetur
-                 adipisicing elit. Aspernatur non aliquam 
-                 exercitationem minus, voluptatum officiis.</p>
-            </div>
-            <div class="info">
-                <div class="left">
-                   <img src="images.png">
-                </div>
-                <div class="middle">
-                   <p>lPeter Naur</p>
-                </div>
-                <div class="right">
-                    <button>technology</button>
-                </div>
-              </div>
-        </div>
-        <div class="item 5">
-            <img src="images (5).jpg">
-            <div class="name">
-            <h2>Cyber security</h2>
-            </div>
-            <div class=" information">
-            <p>Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Cupiditate itaque ea 
-                odit libero accusantium modi.</p>
-                </div>
-                <div class="info">
-                    <div class="left">
-                       <img src="images.png">
-                    </div>
-                    <div class="middle">
-                       <p>Bob Thomas</p>
-                    </div>
-                    <div class="right">
-                        <button>technology</button>
-                    </div>
-                  </div>
-        </div>
-         <div class="item 6">
-            <img src="iot.jpg" >
-            <div class="name">
-            <h2>IoT</h2>
-            </div>
-            <div class="information">
-            <p>Lorem ipsum dolor sit amet consectetur
-                 adipisicing elit. Sunt similique odio
-                  tempore voluptates quae deleniti?</p>
-                  </div>
-                  <div class="info">
-                    <div class="left">
-                       <img src="images.png">
-                    </div>
-                    <div class="middle">
-                       <p> Kevin Ashton</p>
-                    </div>
-                    <div class="right">
-                        <button>technology</button>
-                    </div>
-                  </div>
-         </div>
-         <div class="item 7">
-            <img src="blockchain-trends.webp">
-            <div class="name">
-            <h2>Blockchain technology</h2>
-            </div>
-            <div class="information">
-            <p>Lorem ipsum dolor sit amet consectetur
-                , adipisicing elit. Inventore, voluptate 
-                fugiat. Fugiat doloremque aliquam soluta!</p>
-            </div>
-            <div class="info">
-                <div class="left">
-                   <img src="images.png">
-                </div>
-                <div class="middle">
-                   <p>Satoshi Nakamoto</p>
-                </div>
-                <div class="right">
-                    <button>technology</button>
-                </div>
-              </div>
-         </div>
-         <div class="item 8">
-            <img src="download (1).jpg" >
-            <div class="name">
-            <h2>Artificial inteligence</h2>
-            </div>
-            <div class="information">
-            <p>Lorem ipsum dolor sit amet, consectetur 
-                adipisicing elit. Repudiandae molestias sit
-                 enim obcaecati necessitatibus aliquid.</p>
-            </div>
-            <div class="info">
-                <div class="left">
-                   <img src="images.png">
-                </div>
-                <div class="middle">
-                   <p>Alan Turing</p>
-                </div>
-                <div class="right">
-                    <button>technology</button>
-                </div>
-              </div>
-         </div>
-        
-          </div>
-    </div>
+  </div>
+
+  <script>
+    let element =[];
+
+    
+    show();
+    function addtodo(){
+      let inputelement = document.querySelector('#textbox');
+      let inputdate = document.querySelector('#tododate');
+
+      let items = inputelement.value;
+       let dates =inputdate.value;
+     element.push({item: items , duedate: dates});
+    
+     inputelement.value='';
+     inputdate.value='';
+       show();
+    }
+    function show(){
+     let displayitem = document.querySelector('#para1');
+     
+     let newhtml ='';
+     for(let i=0;i< element.length;i++){
+      let obj1 = element[i].item;
+      let obj2 = element[i].duedate;
+      newhtml += `
+        <span>${obj1}</span>
+        <span id="spand">${obj2}</span> 
+         <span id="span1">
+          <button id="new_button"onclick="element.splice(${i},1); show();">delete</button>
+          </span>
+        `;
+
+     
+     }
+     
+      displayitem.innerHTML = newhtml;
+    }
+  </script>
 </body>
 </html>
